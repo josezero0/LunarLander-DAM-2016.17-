@@ -1,0 +1,140 @@
+body{
+    background-image: url("img/fondo.png");
+    background-size: cover;
+}
+
+h1 {
+    color: black;
+    text-shadow:
+        2px 0 0 #fff,
+        -2px 0 0 #fff,
+        0 2px 0 #fff,
+        0 -2px 0 #fff,
+        1px 1px #fff,
+        -1px -1px 0 #fff,
+        1px -1px 0 #fff,
+        -1px 1px 0 #fff;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+.division{
+    display: inline-block;
+    width: 33.33%;
+    height: 100%;
+    float: left;
+}
+
+h3{
+    text-shadow:
+        2px 0 0 #fff,
+        -2px 0 0 #fff,
+        0 2px 0 #fff,
+        0 -2px 0 #fff,
+        1px 1px #fff,
+        -1px -1px 0 #fff,
+        1px -1px 0 #fff,
+        -1px 1px 0 #fff;
+}
+
+p:lang(en){
+    display: none;
+}
+
+h1:lang(en){
+    display: none;
+}
+
+/*********************************************/
+
+.optMarco {
+    width: 60%;
+    height: 80%;
+    margin-top: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 10%;
+}
+
+.optJugar{
+    width: 60%;
+    height: 10%;
+    margin-right: 20%;
+    margin-left: 20%;
+    float: left;
+}
+
+.optJugar h1{
+    text-align: center;
+}
+
+.divisionB{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+/*********************************************/
+
+.izquierda {
+    display: table;
+    height: 50px;
+    width: 250px;
+}
+
+.izquierda div{
+    float: right;
+}
+
+.izquierda h1{
+    text-align: right;
+}
+
+.izquierda img{
+    margin-left: 5%;
+}
+
+.margenTop{
+    margin-top: 5%;
+}
+
+/*********************************************/
+
+.centro {
+    text-align: center;
+}
+
+#cohete {
+    height: 150px;
+    width: 100px;
+}
+
+#fuego{
+    height: 50px;
+    width: 100px;
+}
+
+/*********************************************/
+
+.derecha {
+    text-align: right;
+    margin-top: 5%;
+}
+
+.derecha div{
+    float: right;
+    margin-right: 5%;
+}
+
+.derecha img{
+    margin-right: 5%;
+}
