@@ -1,10 +1,15 @@
-body{
-    background-image: url("img/fondo.png");
+/* Define la imagen de fondo */
+html {
+	background: url("img/fondo.png") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
 }
 
-h1 {
-    color: black;
+/* Añade borde blanco al texto y texto de color negro */
+p, h1, h2 {
+	color: black;
     text-shadow:
         2px 0 0 #fff,
         -2px 0 0 #fff,
@@ -16,125 +21,149 @@ h1 {
         -1px 1px 0 #fff;
 }
 
+/* Quita el estilo de tipo a la lista */
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
 }
 
-a{
-    text-decoration: none;
+/* Quita la decoracion de los links */
+a {
+	text-decoration: none;
 }
 
-.division{
-    display: inline-block;
-    width: 33.33%;
-    height: 100%;
-    float: left;
+/* Divide la pantalla en 3 franjas verticales del mismo tamaño */
+.division {
+	display: inline-block;
+	width: 33.33%;
+	height: 100%;
+	float: left;
 }
 
-h3{
-    text-shadow:
-        2px 0 0 #fff,
-        -2px 0 0 #fff,
-        0 2px 0 #fff,
-        0 -2px 0 #fff,
-        1px 1px #fff,
-        -1px -1px 0 #fff,
-        1px -1px 0 #fff,
-        -1px 1px 0 #fff;
-}
-
-p:lang(en){
-    display: none;
-}
-
-h1:lang(en){
-    display: none;
-}
-
-/*********************************************/
-
-.optMarco {
-    width: 60%;
-    height: 80%;
-    margin-top: 10%;
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-bottom: 10%;
-}
-
-.optJugar{
-    width: 60%;
-    height: 10%;
-    margin-right: 20%;
-    margin-left: 20%;
-    float: left;
-}
-
-.optJugar h1{
-    text-align: center;
-}
-
-.divisionB{
-    width: 50%;
-    height: 100%;
-    float: left;
-}
-
-/*********************************************/
-
-.izquierda {
-    display: table;
-    height: 50px;
-    width: 250px;
-}
-
-.izquierda div{
-    float: right;
-}
-
-.izquierda h1{
-    text-align: right;
-}
-
-.izquierda img{
-    margin-left: 5%;
-}
-
-.margenTop{
-    margin-top: 5%;
-}
-
-/*********************************************/
-
-.centro {
-    text-align: center;
-}
-
+/* Define el tamaño del div de la imagen y lo centra */
 #cohete {
-    height: 150px;
-    width: 100px;
+	margin: 0 auto;
+	height: 20%;
+	width: 15%;
 }
 
-#fuego{
-    height: 50px;
-    width: 100px;
+/* La imagen ocupa el 100% del ancho y alto dentro del div */
+#cohete img {
+	height: 100%;
+	width: 100%;
 }
 
-/*********************************************/
-
-.derecha {
-    text-align: right;
-    margin-top: 5%;
+/* Alinea la lista de opciones a la derecha */
+#opciones {
+	text-align: right;
 }
 
-.derecha div{
-    float: right;
-    margin-right: 5%;
+p:lang(en), h1:lang(en) {
+	display: none;
 }
 
-.derecha img{
-    margin-right: 5%;
+/* CSS Desktop */
+@media only screen and (min-width: 800px){
+
+	/* Estilos del index.html */
+
+	/* Margen del texto 'INFO' */
+	#info {
+		margin-left: 10%;
+	}
+
+	/* Despliega los elementos de la lista */
+	#opciones:hover #about, #opciones:hover #instruction{
+		display: block;
+	}
+
+	/* Elemento de la lista ABOUT, oculto por defecto */
+	#about {
+		display: none;
+	}
+
+	/* Elemento de la lista INSTRUCCIONES, oculto por defecto */
+	#instruction {
+		display: none;
+	}
+
+	/* Estilos del about.html */
+
+	/* Capa del 80% del body y alinear la capa en el centro de la pantalla*/
+	#divAbout {
+		margin: 0 auto;
+		margin-top: 10%;
+		height: 80%;
+		width: 80%;
+	}
+
+	/* Estilos del instruction.html */
+
+	/* Centrar contenido */
+	.instCentrar {
+		text-align: center;
+	}
+
+	/* Centra la lista en la pantalla */
+	.instList {
+		text-align: center;
+		overflow: hidden;
+	}
+
+	/* Capa del 80% del ancho de la pantalla centrada */
+	.divInstruction {
+		text-align: center;
+		margin: 0 auto;
+		width: 80%;
+	}
+
+}
+
+/* CSS Mobile */
+@media only screen and (max-width: 800px){
+
+	/* Estilos del index.html */
+
+	/* Margen del texto 'INFO' */
+	#info {
+		margin-left: 20%;
+	}
+
+	/* Estilos del about.html */
+
+	/* Capa que ocupa todo el body y centrar el texto */
+	#divAbout {
+		text-align: center;
+		height: 100%;
+		width: 100%;
+	}
+
+	/* Estilos del instruction.html */
+
+	/* Centrar contenido */
+	.instCentrar {
+		text-align: center;
+	}
+
+	/* Centra la lista en la pantalla */
+	.instList {
+		overflow: hidden;	
+	}
+
+	.instList ul{
+		text-align: center;
+	}
+
+	/* Separa los elementos y los alinea en una misma linea */
+	.instList li{
+		display: inline-block;
+		padding: 10px 10px;
+	}
+
+	/* Capa del 80% del ancho de la pantalla centrada */
+	.divInstruction {
+		text-align: center;
+		margin: 0 auto;
+		width: 80%;
+	}
+
 }

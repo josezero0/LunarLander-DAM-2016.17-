@@ -1,50 +1,38 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Lunar Lander</title>
-		<meta charset="UTF-8">
-		<link rel="stylesheet" type="text/css" href="theme.css">
-	</head>
-	<body>
-		<div class="division">
-			<ul class="margenTop">
-				<li><!-- Capa de pausa -->
-					<div class="izquierda">
-						<img src="img/pause.jpg" alt="imagen no disponible" />
-						<div>
-							<h1>Pause</h1>
-						</div>
-					</div>
-				</li>
-				<li><!-- Capa de fuel -->
-					<div class="izquierda">
-						<h1>Fuel: 100%</h1>
-					</div>
-				</li>
-				<li><!-- Altitud -->
-					<div class="izquierda">
-	            		<h1>Altitud: 100m</h1>
-        			</div>
-	 			</li>
+<head>
+	<title>Lunar Lander</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="theme.css">
+</head>
+<body>
+	<!-- Division izquierda -->
+	<div class="division">
+		<h1 id="info">Info:</h1>
+		<ul>
+			<li><h2>Fuel 100%</h2></li>
+			<li><h2>Vel. 10 m/s</h2></li>
+			<li><h2>Alt. 100m</h2></li>
+		</ul>
+	</div>
+	
+	<!-- Division central -->
+	<div class="division">
+		<div id="cohete">
+			<img src="img/cohete.png"/>
+		</div>
+	</div>
+
+	<!-- Division derecha -->
+	<div class="division">
+		<div id="opciones">
+			<h1>Opciones</h1>
+			<ul>
+				<li id="about"><a href="about.html"><h2>About</h2></a></li>
+				<li id="instruction"><a href="instruction.html"><h2>Instrucciones</h2></a></li>
 			</ul>
 		</div>
-
-		<div class="division">
-			<div class="centro">
-				<!-- imagen sin la llama => src="img/cohete-a.png" -->
-				<img id="cohete" src="img/cohete-b.png">
-			</div>
-		</div>
-
-		<div class="division">
-			<div class="derecha">
-			<a href="opciones.html"><img src="img/info.jpg"></a>
-				<div>
-					<div>
-						<a href="opciones.html"><h1>Opciones</h1></a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</body>
+		
+	</div>
+</body>
 </html>
