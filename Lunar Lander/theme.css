@@ -53,7 +53,7 @@ a {
 }
 
 /* Alinea la lista de opciones a la derecha */
-#opciones {
+#opciones h1 {
 	text-align: right;
 }
 /* Alinea el texto de pausa */
