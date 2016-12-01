@@ -53,10 +53,14 @@ a {
 }
 
 /* Alinea la lista de opciones a la derecha */
-.opciones {
+#opciones {
 	text-align: right;
 }
-
+/* Alinea el texto de pausa */
+#Pausa {
+	text-align: right;
+}
+	
 p:lang(en), h1:lang(en) {
 	display: none;
 }
