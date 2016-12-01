@@ -54,13 +54,24 @@ a {
 
 /* Alinea la lista de opciones a la derecha */
 #opciones {
+	margin-right: 10%;
 	text-align: right;
+	float: right;
+	clear: right;
 }
-/* Alinea el texto de pausa */
+
+#pausa {
+	margin-top: 5%;
+	margin-right: 10%;
+	display: table;
+	float: right;
+}
+
 #pausa h1 {
-	text-align: right;
+	display: table-cell;
+	vertical-align: middle;
 }
-	
+
 p:lang(en), h1:lang(en) {
 	display: none;
 }
