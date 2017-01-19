@@ -2,96 +2,68 @@
 
 Desarrollado por **Jose David Pérez Cañellas**.
 
-<<<<<<< HEAD
+Basado en el proyecto de **Miguel Urbina**. [Lunar Lander](https://github.com/urbinapro/lunar-landing-javascript)
+
 Versión de código **minify** tranformado con [minifycode](http://minifycode.com/)
 
-=======
->>>>>>> refs/remotes/origin/master
-El proyecto contiene 3 páginas HTML y 1 CSS responsive:
+## Descripción del proyecto
 
-* index.html
-* about.html
-* instruction.html
-* theme.css
+El proyecto consta de 3 páginas .html, de 2 ficheros .css y de 1 fichero .js:
 
-##index.html
+- index.html
+- instrucciones.html
+- about.html
+- d.css
+- m.css
+- script.js
 
-Está página está dividida en 3 capas verticales, cada una de ellas ocula el 33.3% de la pantalla.
+### index.html
 
-###Capa izquierda
+Página dónde podemos encontrar los elementos importantes del juego: la nave, el panel de información y el menú de opciones.
 
-En la capa de la izquierda se encuentra la información relevante a la partida:
+La nave ocupa el centro de la pantalla. Está situada a un 10% del top de la pantalla, descenderá hasta llegar al 70% del top de la pantalla.
 
-* Fuel
-* Velocidad
-* Altura
+Dispongo de 3 imágenes de la nave: nave con motor apagado, nave con motor encendido y nave explotada. Las 3 imágenes tienen una resolución de 130x200px.
 
-####Fuel
+El panel de control situado en la esquina superior izquierda de la pantalla nos da la información relevante a la nave: velocidad, fuel y altura.
 
-Este indicador medirá la cantidad de combustible del que dispone la nave para aterrizar.
+La velocidad máxima para aterrizar es 1.5 m/s.
 
-Cuando se quede sin fuel la nave ya no podrá activar el propulsor.
+El fuel tiene un límite de 100 que irá disminuyendo a medida que utilicemos el propulsor de la nave.
 
-####Velocidad
+La altura irá disminuyendo a medida que la nave se vaya acercando a la luna, si al llegar a altura 0 la nave tiene una velocidad superior a la mencionada anteriormente 1.5 m/s la nave explotará, por otro lado, si lo conseguimos la nave aterrizará correctamente.
 
-Este indicador medirá la velocidad a la que la nave está cayendo a la luna.
+El menú de opciones de la esquina superior derecha de la pantalla nos permite: pausar el juego en cualquier momento, mostrar las instrucciones del juego y mostrar información sobre el juego. De igual manera que el botón de pausa para el juego, volverlo a pulsar reanuda el juego.
 
-Esta velocidad irá en aumento, por lo que el usuario deberá activar el propulsor para frenar la nave.
+### instrucciones.html
 
-Tiene que aterrizar con la menor velocidad de caida posible para poder aterrizar con éxito.
+Página dónde podemos encontrar información sobre cómo jugar y cual es el objetivo del juego: aterrizar la nave con la menor velocidad de alunizaje posible para no explotar.
 
-####Altura
+### about.html
 
-La altura midirá la distancia entre la nave y la superficie de aterrizaje de la luna.
+Página dónde podemos encontrar información sobre el juego, su desarrollador y otra información documental técnica.
 
-Al llegar a 0 dependiendo de la velocidad de caida en aquel momento la nave explotará o aterrizará con éxito.
+### d.css
 
-###Capa central
+Versión de estilos css para escritorios. Acepta dispositivos con pantallas de 961px de ancho mínimo.
 
-En esta capa hay un div que ocupa el 15% x 20%.
+### m.css
 
-Dentro de dicho div hay únicamente una imagen del cohere que ocupa el 100% del div.
+Versión de estilos css para móviles. Acepta dispositivos con pantallas de 960px de ancho máximo.
 
-###Capa derecha
+### script.js
 
-Esta capa contiene las opciones del juego.
+Fichero javascript que contiene la mayor parte de los cambios de esta nueva versión.
 
-####Pausa
+Este fichero tiene varias funciones que juntas permiten hacer aterrizar la nave en la superficie de la luna o explotando dependiendo de la velocidad de la nave.
 
-Esta opción del juego pone el juego en pausa, para la nave.
+Al cargar la ventana cargarán una serie de funciones:
 
-Cuando quiera el usuario podrá volver a darle al play para continuar la partida.
+- Mostrar/Ocultar el menú del móvil
 
-####Opciones
+- Hacer click sobre la pantalla para activar/desactivar el motor de la nave
 
-Es un menú desplegable para la versión de ordenador (pantallas con una anchura superior a 800px), para las versiones móviles es una lista de elementos siempre visible (pantallas con una anchura inferior a 800px).
+- Detectar cualquier botón pulsado para activar/desactivar el motor de la nave
 
-####About
+- Iniciar la caída automática de la nave hacía la luna
 
-Muestra información sobre el juego, su desarrollador, su diseñador y gráficos.
-
-####Instrucciones
-
-Muestra las instrucciones del juego, su funcionamiento y objetivo.
-
-##about.html
-
-Capa centrada que ocupa un 80% x 80% de la pantalla en la versión de ordenador y un 100% de la pantalla con el texto centrado en la versión de móviles.
-
-##instruction.html
-
-Capa que ocupa todo el ancho de la pantalla y un 80% del alto de la misma.
-
-Muestra las instrucciones del juego centradas en la pantalla. Además, se dispone de las instrucciones en 2 idiomas: español e inglés.
-
-Al clickar sobre un idioma se mostrarán las instrucciones en dicho idioma y se ocultarán las del idioma activo.
-
-##Nota:
-
-**Tanto en el about.html como en instruction.html se puede volver al index.html para empezar una partida**
-
-##theme.css
-
-Hoja de estilos responsive. Detecta cuando una pantalla es inferior a 800px de anchura y le aplica unos estilos específicos. De igual manera con las pantallas de mayor tamaño.
-
-Esta hoja de estilos incluye todos los estilos de las 3 páginas html ya mencionadas.
