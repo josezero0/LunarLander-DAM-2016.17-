@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lunar Lander</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" media="screen and (min-width: 961px)" href="css/d.css">
+        <link rel="stylesheet" media="screen and (max-width: 960px)" href="css/m.css">
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+        <div id="nave">
+            <img id="inave" src="img/cohete0.png" alt="img nave">
+        </div>
+        <div class="a">
+            <div id="showm">
+                <img src="img/pausa.png" alt="img pause">
+            </div>
+            <ul>
+                <li><p>Vel. <span id="velocidad">100</span> m/s</p></li>
+                <li><p>Fuel <span id="fuel">100</span> l</p></li>
+                <li><p>Alt. <span id="altura">70</span> m</p></li>
+            </ul>
+        </div>
+        <div class="b">
+            <br>
+        </div>
+        <div class="c">
+            <div id="hidem">
+                <img src="img/pausa.png" alt="img pause">
+            </div>
+            <ul>
+                <li id="hideopt"><img src="img/pausa.png" alt="img pause" onclick="tratarPausa()"></li>
+                <li><a href="instrucciones.html">Instrucciones</a></li>
+                <li><br></li>
+                <li><a href="about.html">Acerca de...</a></li>
+            </ul>
+        </div>
+        <div class="d">
+            <h1 class="win">Enhorabuena!</h1>
+            <h2 class="win">Has ganado.</h2>
+            <h1 class="lose">Lástima!</h1>
+            <h2 class="lose">Has perdido.</h2>
+            <img src="img/play.png" alt="alt play" onclick="again()">
+        </div>
+    </body>
+</html>
