@@ -2,8 +2,11 @@
 
 Desarrollado por **Jose David Pérez Cañellas**.
 
+<<<<<<< HEAD
 Versión de código **minify** tranformado con [minifycode](http://minifycode.com/)
 
+=======
+>>>>>>> refs/remotes/origin/master
 El proyecto contiene 3 páginas HTML y 1 CSS responsive:
 
 * index.html
